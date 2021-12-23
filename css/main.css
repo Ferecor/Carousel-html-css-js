@@ -1,0 +1,82 @@
+ :root {
+    --primary-color: rgba(109, 109, 110, 0.418);
+    --secundary-color: rgba(54, 54, 78, 0.712);
+    --text-color: rgba(238, 238, 240, 0.877);
+ }
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif; 
+}
+
+.carousel {
+    
+    width: 800px;
+    height: 790px;
+    overflow: hidden;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.images {
+    display: flex;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+}
+
+.image {
+    border-radius: 8px;
+    width: 800px;
+    height: 600px;
+}
+
+.controls {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.btn-prev, .btn-next {
+    color: var(--text-color);
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background-color: #fff;
+    color: var(--secundary-color);
+    border: 1px solid var(--secundary-color);
+}
+
+.atribution { 
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:var(--text-color);  
+}
